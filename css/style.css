@@ -15,51 +15,73 @@ a{
 	-moz-transition: all 0.3s ease-out;
 }
 body{
-	background: #fff;
+	background: #fff ;/*url(../images/academia-back.jpg);*/
+	/*background-size: cover;*/
 	border-top: 5px solid rgb(41,37,38);
-	font: 20px/24px 'Open Sans' "Helvetica Neue",helvetica,arial,sans-serif;
-	color: #444;
+	font-size: 18px;
+	font-family: 'Open Sans' "Helvetica Neue",helvetica,arial,sans-serif;
+	color: rgb(41,37,38);
 	line-height: 1.35;
 }
+/*.overlay{
+	background: rgba(0,0,0,.4);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: -1;
+
+}*/
 section{
 	background: #fff;
-	margin: 100px auto;
+	border-radius: 10px;
+	margin: 80px auto 50px;
 	padding:10px;
 	max-width: 600px;
 	text-align: center;
+	z-index: 1;
 }
-section h1{
-	font-size: 15px;
+section h2{
+	font-size: 18px;
 	text-transform: uppercase;
 	line-height: 2.5em;
 }
-section span{
+section h1{
+	font-size: 22px;
+	display: block;
+	letter-spacing: 3px;
+}
+section em{
 	font-size: 13px;
 	letter-spacing: 1px;
 }
  input[type="email"]{
-	padding: 10px;
+ 	background-color: transparent;
+	padding: 12px;
 	border: 1px solid rgb(41,37,38);
-	font-size: 14px;
+	border-radius: 10px 0px 0px 10px;
 	width: 160px;
+	height: 15px;
 	color:  rgb(41,37,38);
-
+	outline: 0
 }
 input[type="submit"]{
 	border: 0;
 	cursor: pointer;
-	padding: 11px;
 	background: rgb(41,37,38);
+	border-radius: 0px 10px 10px 0px;
 	color: #fff; 
-	font-size: 14px;
-	text-transform: uppercase;
-
+	right: 5px;
+	position: relative;
+	height: 41px;
+	width: 40px;
 }
 .send-email, .share{
-	margin: 20px 0;
+	margin: 10px 0;
 	padding: 10px;
 }
- .share h3{
+ .share p{
 	font-size: 14px;
 	margin-bottom: 15px;
 }
@@ -71,17 +93,22 @@ ul.share li{
 }
 ul.share li a{
 	display: block;
-	height: 35px;
-	width: 35px;
-	opacity: .5
-}
-ul.share li a:hover{
-	opacity: 1;
+	height: 50px;
+	width: 50px;
 }
 ul.share li a#fb{
-	background: url(../images/fb_32.png) 0 0 no-repeat;
+	background: url(../images/facebook-b.png) 0 0 no-repeat;
 }
 ul.share li a#tw{
 	background: url(../images/tw_32.png) 0 0 no-repeat;
 
+}
+ul.share li a#blog{
+	background: url(../images/blog-b.png) 0 0 no-repeat;
+
+}
+footer{
+	font-size: 12px;
+	text-align: center;
+	padding-bottom: 20px
 }

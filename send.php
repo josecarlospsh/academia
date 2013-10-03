@@ -28,39 +28,5 @@ if(mail($para, $asunto, utf8_decode($mensaje), $header)) {
 			echo 'Hubo un problema al enviar tu email. :(';
 			}
 
-<form action="<?php $_SERVER['PHP_SELF'];?>" method="post">
-      <label class="rotulo-contact">Nombre</label>
-     
-      <p><input name="nombre" type="text" class="campo-contacto" required autofocus></p>
-     
-     <label class="rotulo-contact">Email</label>
-     <p><input name="email" type="email" class="campo-contacto" required autofocus></p>
-     
-     <label class="rotulo-contact">Telefono</label>
-     <p><input name="telefono" type="text" class="campo-contacto"></p>
-     
-     <label class="rotulo-contact">labelrograma</p>
-     
-     <p>
-       <label>
-         <input type="checkbox" name="programa" value="Peruvian Universities" id="programa_0">
-         Peruvian Universities</label>
-       
-       <label>
-         <input type="checkbox" name="programa" value="Opinion Aenu" id="programa_1">
-         Opinion Aenu</label>
-       
-       <label>
-         <input type="checkbox" name="programa" value="Accion Aenu" id="programa_2">
-         Accion Aenu</label>
-      
-     </p>
-     
-         <p class="rotulo-contact">Mensaje</p>
-     <p><textarea name="mensaje" cols="" rows="" class="mensaje"></textarea></p>
-<p><input name="enviar" type="submit" value="Enviar" class="botonenviar2"></p>
-     
-     
-     </form>
 
 ?>
