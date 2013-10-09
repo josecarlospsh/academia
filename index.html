@@ -2,14 +2,13 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="google-site-verification" content="KzKWY-Cqj3TzC_DmOgl9YH3wvysVQVAoYwrSnHQjdpY" />
 	<title>La Academia</title>
 	<meta name="title" content="La Academia">
 	<meta name="description" content="Desde la canción para empezar bien el día hasta la Señorita que nos gusta su style. Esto es La Academia.">
-	<meta name="autor" content="@josecarlospsh">
+	<meta name="autor" content="josecarlos.2682@hotmail.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
@@ -25,12 +24,13 @@
 		<h1>Desde estilo hasta Señoritas.</h1> 
 		<em>*Déjanos tu e-mail para hacerte saber cuándo se abrirán las puertas de La Academia.</em>
 		<div class="send-email">
-			<form  id="send-email" action="send.php" method="post">
+			<form id="send" action="send.php" method="post">
 				<div id="loader">
-					<input type="email" name="email" placeholder="" required>
-					<input type="submit" name="submit" value="&rsaquo;">
+					<input type="email" name="email" id="email" placeholder="">
+					<input type="submit" name="submit" id="submit" value="&rsaquo;">
 				 </div>
 			</form>
+			<p class="result"></p>
 		</div>
 		<ul class="share">
 			<p>Encuéntranos en:</p>

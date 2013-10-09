@@ -1,8 +1,11 @@
 // Enviar email
-			  $(document).ready(function(){
-			$(function(){
-				$('#send-email').submit(function(e){
-					e.preventDefault();
+$(document).ready(function(){
+		$(function(){
+			$('#send').submit(function(e){
+				e.preventDefault();
+				var result = $(".result").text("");
+				var email = $("#email").val();
+				if (validateEmail(email)) {
 					var form = $(this);
 					var post_url = form.attr('action');
 					var post_data = form.serialize();
@@ -17,10 +20,18 @@
 							});
 						}
 					});
-				});
+				}else{
+					$("#email").css("border-color", "red");
+					$(".result").text("Hubo un problema al enviar tu email. :(");
+				}
 			});
-			 });
-
+		});
+});
+//validar email
+function validateEmail(email) { 
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
 //detectar el navegador y sistema operativo de cual se visita  
 function detect_os(){ 
     var uAgent = navigator.userAgent.toLowerCase();

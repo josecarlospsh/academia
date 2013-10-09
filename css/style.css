@@ -1,6 +1,8 @@
 *{
 	margin: 0;
 	padding: 0;
+	outline: none;
+	-webkit-font-smoothing:antialiased;
 }
 img{
 	max-width: 100%;
@@ -15,13 +17,12 @@ a{
 	-moz-transition: all 0.3s ease-out;
 }
 body{
-	background: #fff ;/*url(../images/academia-back.jpg);*/
-	/*background-size: cover;*/
+	background: #fff ;
 	border-top: 5px solid rgb(41,37,38);
+	font-family: 'Open Sans',"Helvetica Neue",helvetica,arial,sans-serif;
 	font-size: 18px;
-	font-family: 'Open Sans' "Helvetica Neue",helvetica,arial,sans-serif;
 	color: rgb(41,37,38);
-	line-height: 1.35;
+	line-height: 1.5;
 }
 /*.overlay{
 	background: rgba(0,0,0,.4);
@@ -76,6 +77,11 @@ input[type="submit"]{
 	position: relative;
 	height: 41px;
 	width: 40px;
+}
+.result{
+	font-size: 12px;
+	font-weight: bold;
+	margin-top:10px;
 }
 .send-email, .share{
 	margin: 10px 0;
